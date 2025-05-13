@@ -1,0 +1,12 @@
+CREATE DATABASE UserCatalog;
+
+USE UserCatalog;
+
+CREATE TABLE Users (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Company_Id INT NOT NULL,
+    Role_Id INT NOT NULL,
+    Name NVARCHAR(100) NOT NULL,
+    User NVARCHAR(50) NOT NULL,
+    pwd NVARCHAR(20) NOT NULL
+);
